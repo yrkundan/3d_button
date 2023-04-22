@@ -1,0 +1,55 @@
+body{
+    border: 3px solid green;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: whitesmoke;
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
+
+}
+ul{
+    padding: 0;
+    list-style-type: none;
+}
+ul li{
+    align-items: center;
+    box-sizing: border-box;
+    border: 2px solid rebeccapurple;
+    width: 15em;
+    height:3em;
+    font-size: 20px;
+    margin: 40px;
+    /* text-align: center; */
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    text-transform: uppercase;
+    transition: 0.3s;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+ul li:nth-child(even){
+    background: linear-Gradient(to left,orange,tomato);
+    padding-left: 7%;
+    transform:perspective(500px) rotateY(-45deg);
+    text-align: right;
+}
+ul li:nth-child(odd){
+    background: linear-Gradient(to right,orange,tomato);
+    padding-right: 7%;
+    transform:perspective(500px) rotateY(45deg);
+    text-align: left;
+}
+ul li:nth-child(even):hover{
+    padding-left: 5%;
+    transform: perspective(200px) rotateY(45deg);
+}
+ul li:nth-child(odd):hover{
+    padding-right: 5%;
+    transform: perspective(200px) rotateY(-45deg);
+}
